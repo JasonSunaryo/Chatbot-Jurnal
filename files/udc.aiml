@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <!-- LATAR BELAKANG -->
+  <category>
+    <pattern>APA LATAR BELAKANG PENELITIAN INI</pattern>
+    <template>
+      Penelitian ini dilatarbelakangi oleh meningkatnya penggunaan pesawat terbang 
+      dan masalah delay penerbangan yang merugikan penumpang dan maskapai.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MENGAPA PENELITIAN DELAY PENERBANGAN ITU PENTING</pattern>
+    <template>
+      Delay penerbangan menyebabkan kerugian operasional dan berdampak pada kepuasan penumpang, 
+      sehingga penting untuk diprediksi agar dapat dikurangi.
+    </template>
+  </category>
+
+  <category>
+    <pattern>FAKTOR APA SAJA YANG MEMPENGARUHI DELAY</pattern>
+    <template>
+      Beberapa faktor seperti cuaca, hari weekend, jenis maskapai, lama penerbangan, 
+      dan bandara asal dan tujuan.
+    </template>
+  </category>
+
+  <!-- TUJUAN PENELITIAN -->
+  <category>
+    <pattern>APA TUJUAN PENELITIAN INI</pattern>
+    <template>
+      Tujuannya adalah memprediksi apakah penerbangan akan delay atau tidak dengan
+      menggunakan ANN, Decision Tree dan KNN.
+    </template>
+  </category>
+
+  <!-- DATASET -->
+  <category>
+    <pattern>DATASET APA YANG DIGUNAKAN</pattern>
+    <template>
+      Dataset berasal dari Kaggle dengan nama Delay Airlines berisi 539383 data penerbangan dan 9 variabel.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BERAPA BANYAK DATA DALAM DATASET</pattern>
+    <template>
+      Dataset memiliki 539383 sampel data penerbangan.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA SAJA VARIABEL DATASET</pattern>
+    <template>
+      Terdapat 9 variabel: id, Airline, Flight, AirportFrom, AirportTo, DayOfWeek, Time, Length, dan Delay.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA ARTI NILAI DELAY</pattern>
+    <template>
+      Nilai 0 berarti tidak delay, nilai 1 berarti penerbangan delay.
+    </template>
+  </category>
+
+  <!-- METODOLOGI -->
+  <category>
+    <pattern>APA METODOLOGI PENELITIAN INI</pattern>
+    <template>
+      Data dikumpulkan, dipreprocessing, lalu dimodelkan menggunakan ANN, Decision Tree, 
+      dan KNN, kemudian dievaluasi menggunakan Confusion Matrix dan Classification Report.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA DATA DIOLAH</pattern>
+    <template>
+      Data dicek missing value, dipisahkan menjadi data latih dan data uji, lalu model dibangun dan diuji.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA METODE EVALUASI YANG DIGUNAKAN</pattern>
+    <template>
+      Evaluasi menggunakan Confusion Matrix, Precision, Recall, F1-Score dan Accuracy.
+    </template>
+  </category>
+
+  <!-- ANN -->
+  <category>
+    <pattern>APA ITU ANN</pattern>
+    <template>
+      ANN atau Artificial Neural Network adalah metode komputasi berbasis jaringan saraf 
+      dengan lapisan input, hidden, dan output.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MENGAPA ANN DIGUNAKAN</pattern>
+    <template>
+      ANN digunakan karena mampu mempelajari pola kompleks dalam data.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA HASIL ANN</pattern>
+    <template>
+      Hasil ANN kurang memuaskan dengan akurasi sekitar 51.9 persen dan prosesnya memakan waktu lama.
+    </template>
+  </category>
+
+  <!-- DECISION TREE -->
+  <category>
+    <pattern>APA ITU DECISION TREE</pattern>
+    <template>
+      Decision Tree adalah algoritma berbentuk pohon keputusan yang membagi data 
+      berdasarkan atribut paling informatif.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MENGAPA DECISION TREE DIGUNAKAN</pattern>
+    <template>
+      Karena mudah dipahami, cepat, dan cocok untuk dataset besar.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA HASIL DECISION TREE</pattern>
+    <template>
+      Decision Tree adalah yang terbaik dengan akurasi 62.5 persen, precision 0.646, recall 0.594 
+      dan F1-score 0.57.
+    </template>
+  </category>
+
+  <!-- KNN -->
+  <category>
+    <pattern>APA ITU KNN</pattern>
+    <template>
+      KNN atau K-Nearest Neighbor adalah metode klasifikasi berdasarkan tetangga terdekat.
+    </template>
+  </category>
+
+  <category>
+    <pattern>MENGAPA KNN DIGUNAKAN</pattern>
+    <template>
+      KNN digunakan karena mudah dan fleksibel, serta efektif untuk data besar.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA HASIL KNN</pattern>
+    <template>
+      Hasil KNN biasa saja dengan akurasi sekitar 52 persen dan tidak banyak berubah meski nilai K diubah.
+    </template>
+  </category>
+
+  <!-- HASIL AKHIR -->
+  <category>
+    <pattern>ALGORITMA MANA YANG PALING AKURAT</pattern>
+    <template>
+      Algoritma Decision Tree adalah yang paling akurat dalam penelitian ini.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APA HASIL PENELITIAN INI</pattern>
+    <template>
+      Hasilnya menunjukkan Decision Tree mengungguli ANN dan KNN dalam memprediksi delay penerbangan.
+    </template>
+  </category>
+
+  <category>
+    <pattern>BAGAIMANA PERBANDINGAN KETIGA ALGORITMA</pattern>
+    <template>
+      ANN kurang akurat dan lambat, KNN hasilnya biasa saja, sedangkan Decision Tree paling baik.
+    </template>
+  </category>
+
+  <!-- KESIMPULAN -->
+  <category>
+    <pattern>APA KESIMPULAN PENELITIAN INI</pattern>
+    <template>
+      Decision Tree adalah algoritma terbaik. ANN lambat dan kurang akurat. 
+      KNN tidak terlalu berubah meski K diatur berbeda.
+    </template>
+  </category>
+
+  <category>
+    <pattern>APAKAH SARAN PENELITIAN SELANJUTNYA</pattern>
+    <template>
+      Disarankan menambah algoritma lain seperti Naive Bayes, Random Forest, atau SVM.
+    </template>
+  </category>
+
+  <!-- FALLBACK -->
+  <category>
+    <pattern>*</pattern>
+    <template>
+      Maaf, saya belum punya jawaban untuk itu. Coba tanyakan tentang dataset, algoritma, hasil, atau kesimpulan penelitian.
+    </template>
+  </category>
+
+</aiml>
