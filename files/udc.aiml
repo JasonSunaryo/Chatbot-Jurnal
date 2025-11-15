@@ -1019,4 +1019,8 @@ Coba ketik "MENU" untuk melihat apa saja yang bisa saya jelaskan!</li>
     </template>
   </category>
 
+<category>
+    <pattern>halo</pattern>
+    <template>Edit bot response</template>
+</category>
 </aiml>
